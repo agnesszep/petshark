@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reasons I do not have a card</title>
+	<link href="style.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+	<h1>Reasons I do not have a card</h1>
+	<div id="quoteDisplay">
+			<p>Don't have a card? Just click the button to get a believable reason to tell on the standup!</p>
+	</div>
+	<button class="zoldgombok"  onclick="newQuote()">New Reason</button>
+
+	<script>
+
+		var quotes = [
+
+		'I created one but Agi deleted it',
+		'You only need a card if you work longer than 2 hours',
+		'What is a card anyway?',
+		'I created one in Trello',
+		'Because it was a teeny tiny task',
+		'I did the task within another card I cannot find right now',
+		'There is a card we just cannot see it on this board',
+		'My cat was sick and I did not have time',
+		'Deniza told me I do not need one',
+		'It was my birthday',
+		'I was trying to spare time',
+		'It is already merged so there is no reason to create one in retrospect',
+		'My name is Kris',
+		'We ran out of empty cards in JIRA',
+		'I have a card I just did not assign myself to it because of... reasons',
+		'I thought I was the sheriff and I just had to help',
+		'There is a card I just have not created it yet'
+	]
+
+	function newQuote() {
+		var randomNumber = Math.floor(Math.random() * (quotes.length));
+		document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+	}
+	</script>
+	</body>
+</html>

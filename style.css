@@ -1,0 +1,38 @@
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: verdana;
+}
+
+p {
+	color:darkgreen;
+	font:italic;
+
+}
+
+#quoteDisplay {
+  font-family: verdana;
+  font:bold;
+  font-size: 20px;
+  text-align: center;
+  color:darkgreen
+}
+
+.zoldgombok {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  margin: 20px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: verdana;
+  display: flex;
+  justify-content: center;
+
+}
